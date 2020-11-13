@@ -30,6 +30,7 @@ var swiper = new Swiper('.swiper-container', {
     wrapperClass: 'slider-wrapper',
     spaceBetween: 30,
     speed: 400,
+
     autoplay: {
       delay: 4000,
     },

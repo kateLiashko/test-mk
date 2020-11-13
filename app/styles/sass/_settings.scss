@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "CommissReg", sans-serif;
+    font-family: 'CommissReg' sans-serif;
     font-size: 16px;
     color: #000;
     background-color:#E5E5E5;
@@ -16,9 +16,40 @@ body {
 h2 {
     font-family: 'CommissReg', sans-serif;
     font-size: 28px;
+    font-weight: 300;
     color: rgba(0, 0, 0, 0.9);
+}
+
+p {
+    font-family: 'LatoLight', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+.more__info {
+    font-family: 'CommissBold', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: #DEC377;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
 }

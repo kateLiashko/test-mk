@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Правовые технологии</title>
     <link rel="icon" href="./media/src/icons/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 <body>
@@ -12,74 +13,868 @@
         <header class="header">
             <div class="container-custom">
                 <div class="header__contacts">
-                    <div class="header__language">
-                        <p>Язык</p>
-                    </div>
+                    <form class="header__language" method="GET" action="#"> 
+                        <span class="category">язык</span>
+                        <select class="category__list" name="category">
+                            <option value="1" selected>русский</option>
+                            <option value="2">english</option>
+                            <option value="3">german</option>
+                        </select>
+                    </form>
                     <svg class="icon-eye">
                         <use xlink:Href="./media/src/sprite.svg#icon-eye"/>
                     </svg>
-                    <div class="header__phone">
-                        <a href="tel:+375(44)755-01-01">+375 (44) 755-01-01</a>
-                        <svg class="icon-a1">
-                            <use xlink:Href="./media/src/sprite.svg#icon-a1"/>
-                        </svg>
-                        <svg class="icon-viber">
-                            <use xlink:Href="./media/src/sprite.svg#icon-viber"/>
-                        </svg>
-                        <svg class="icon-whatsapp">
-                            <use xlink:Href="./media/src/sprite.svg#icon-whatsapp"/>
-                        </svg>
-                        <a href="tel:+375(29)550-01-01">+375 (29) 550-01-01</a>
-                        <svg class="icon-mts">
-                            <use xlink:Href="./media/src/sprite.svg#icon-mts"/>
-                        </svg>
-                    </div>
-                    
+                    <ul class="header__phone">
+                        <li>
+                            <a href="tel:+375447550101">+375 (44) 755-01-01</a>
+                        </li>
+                        <li>
+                            <svg class="icon-a1">
+                                <use xlink:Href="./media/src/sprite.svg#icon-a1"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon-viber">
+                                <use xlink:Href="./media/src/sprite.svg#icon-viber"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon-whatsapp">
+                                <use xlink:Href="./media/src/sprite.svg#icon-whatsapp"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <a href="tel:+375295500101">+375 (29) 550-01-01</a>
+                        </li>
+                        <li>
+                            <svg class="icon-mts">
+                                <use xlink:Href="./media/src/sprite.svg#icon-mts"/>
+                            </svg>
+                        </li>
+                    </ul>                    
                 </div>
-
+            </div>    
+            <div class="container-custom">   
                 <div class="header__navigation">
                 
                     <a href="#home" class="logo">
                         <picture>
-                            <source srcset="./media/image/
+                            <source srcset="./media/image/logo.webp" 
                             type="image/webp">           
         
-                            <img src="./media/image/works/work6.jpg" alt="design packaging for tea">
+                            <img src="./media/image/logo.png" alt="logo company">
                         </picture>
                     </a> 
-                    <div class="menu-burger" id="menu-burger"> 
-                        <button class="menu-btn">
-                        <span class="menu-btn-lines"></span>
-                        </button>                              <nav>
-                        <ul class="menu-box">
-                            <li><a class="menu-item" href="#home">Home</a></li>
-                            <li><a class="menu-item" href="#about">About Us</a></li>
-                            <li><a class="menu-item" href="#works">Works</a></li>
-                            <li><a class="menu-item" href="#services">Services</a></li>
-                            <li><a class="menu-item" href="#team">Team</a></li>
-                            <li><a class="menu-item" href="#characteristic">They says</a></li>
-                            <li><a class="menu-item" href="#contact">Contact</a></li>
-                        </ul>
-                        </nav>
-                    </div> 
-                </div>
-               
+                    <nav class="header__menu">
+                        <ul class="header__box">
+                            <li>
+                                <a class="menu-item" href="#home">Главная</a>
+                            </li>                                
+                            <li>
+                                <a class="menu-item" href="#about">О нас</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="#services">Услуги</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="#prices">Тарифы</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="#info">Инфоцентр</a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="#contact">Контакты</a>
+                            </li>
+                            <li>
+                                <svg class="icon-search">
+                                    <use xlink:Href="./media/src/sprite.svg#icon-search"/>
+                                </svg>        
+                            </li>
+                        </ul>  
+                                         
+                    </nav>                    
+                </div>          
             </div>
         </header>
-        <section class="intro-box" id="home">
+
+        <section class="promo" id="home">
+            <h1>Юридическое сопровождение бизнеса
+                от «МК-Правовые технологии»</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide background1">
+                        <div class="container-custom">
+                         <div class="promo__info">
+                                <h2>Взыскание дебиторской
+                                    задолженности</h2>
+                                <p>Индивидуальный подход и нацеленность на достижение результата</p>
+                                <a class="more__info" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide background2">
+                        <div class="container-custom">
+                            <div class="promo__info">
+                                <h2>Регистрация ООО</h2>
+                                 <p>Гарантируем минимальные сроки регистрации под ключ</p>
+                                <a class="more__info" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide background3">
+                        <div class="container-custom">
+                            <div class="promo__info">
+                                <h2>Ликвидация предприятия</h2>
+                                 <p>Эффективное решение сложных задач</p>
+                                <a class="more__info" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide background4">
+                        <div class="container-custom">
+                            <div class="promo__info">
+                                <h2>Юридическая консультация</h2>
+                                 <p>Детальные разъяснения вопросов по ведению бизнеса от профессионалов</p>
+                                <a class="more__info" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide background5">
+                        <div class="container-custom">
+                            <div class="promo__info">
+                                <h2>Юридический аутсорсинг</h2>
+                                 <p>Гарантия своевременности и качества услуг</p>
+                                <a class="more__info" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>               
+        </section>
+
+        <section class="advantages">
             <div class="container-custom">
-                <h1>Say Hello to SHOPNO!                
-                Agency CORPORATE SHOPNO Theme
-                    <span class="top-akcent"></span>
-                    <span class="akcent"></span>
-                </h1>
-                <a href="contact.html">CONTACT US</a>
-                
-                <img class="glass-icon" src="./media/image/glass.png" alt="water glass">               
-                
+                <div class="advantages__card card1">
+                    <div class="advantages__icon">
+                        <svg class="icon-safe">
+                            <use xlink:Href="./media/src/sprite.svg#icon-safe"/>
+                        </svg>
+                    </div>
+                    <h3>Надежная защита</h3>
+                </div>
+                <div class="advantages__card card2">
+                    <div class="advantages__icon">
+                        <svg class="icon-reputation">
+                            <use xlink:Href="./media/src/sprite.svg#icon-reputation"/>
+                        </svg>
+                    </div>
+                    <h3>Безупречная репутация</h3>
+                </div>
+                <div class="advantages__card card3">
+                    <div class="advantages__icon">
+                        <svg class="icon-result">
+                            <use xlink:Href="./media/src/sprite.svg#icon-result"/>
+                        </svg>
+                    </div>
+                    <h3>Ориентированность на результат</h3>
+                </div>
+                <div class="advantages__card card4">
+                    <div class="advantages__icon">
+                        <svg class="icon-protected">
+                            <use xlink:Href="./media/src/sprite.svg#icon-protected"/>
+                        </svg>
+                    </div>
+                    <h3>Абсолютная конфиденциальность</h3>
+                </div>
+            </div>
         </section>
 
     </section>
+
+    <section class="wr-about">
+        <div class="container-custom">
+            <div class="discription">
+                <div class="discription__content">
+                    <h2>Юридическое сопровождение бизнеса
+                    от «МК-Правовые технологии»</h2>
+                    <p>Главный принцип нашей работы - качество. Постоянно следовать ему помогает сплоченная команда талантливых и энергичных сотрудников, способных сообща заниматься сложными проектами, никогда не допуская сбоев в работе.</p>
+
+                    <p>Мы обеспечиваем максимальный уровень профессионального обслуживания, который можно ожидать от крупной юридической фирмы.</p>
+                    
+                    <p>Нашу фирму отличают яркая индивидуальность и следование модели эффективного юридического обслуживания. Благодаря профессиональной гибкости мы находим творческие решения как обычных вопросов, так и неординарных проблем, возникающих у наших клиентов.</p>
+                    
+                    <p>Все наши рекомендации основаны на глубоких академических знаниях и опыте практического применения в хозяйственном праве.</p>
+                </div>
+                <picture>
+                    <source srcset="./media/image/preview.webp" 
+                    type="image/webp">           
+
+                    <img src="./media/image/preview.png" alt="the stairs go up">
+                </picture>
+            </div>
+            <div class="activity">
+                <h2>Основные направления деятельности</h2>
+                <div class="activity__container">
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Взыскание долгов</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-deptmoney">
+                                <use xlink:Href="./media/src/sprite.svg#icon-deptmoney"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Реорганизация бизнеса</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-reorganize">
+                                <use xlink:Href="./media/src/sprite.svg#icon-reorganize"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Продажа бизнеса</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-price">
+                                <use xlink:Href="./media/src/sprite.svg#icon-price"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Юридические консультации</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-support">
+                                <use xlink:Href="./media/src/sprite.svg#icon-support"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Ликвидация организаций</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-lbox">
+                                <use xlink:Href="./media/src/sprite.svg#icon-lbox"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Разработка договоров</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-doc">
+                                <use xlink:Href="./media/src/sprite.svg#icon-doc"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Регистрация бизнеса</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-stamp">
+                                <use xlink:Href="./media/src/sprite.svg#icon-stamp"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Юридический аутсорсинг</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-outsource">
+                                <use xlink:Href="./media/src/sprite.svg#icon-outsource"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity__type">
+                        <div class="activity__type__discription">
+                            <h4>Аттестация в строительстве</h4>
+                            <a class="activity__more" href="#">Подробнее</a>
+                        </div>
+                        <div class="icon__wrapper">
+                            <svg class="icon-dollar">
+                                <use xlink:Href="./media/src/sprite.svg#icon-dollar"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a class="more__info" href="#">Все услуги</a>
+            </div>
+            <div class="work__principle">
+                <div class="work__principle__container">
+                    <h2>Основные направления деятельности</h2>
+                    <div class="work__discription">
+                        <p>Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом, с тем чтобы от начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим целью не только привлечение новых клиентов, но и поддержание длительных партнерских отношений с клиентами, которые уже воспользовались нашими услугами.</p>
+                        <p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой сложности.</p>
+                    </div>
+                </div>
+                <div class="swiper-container-work">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./media/image/direction/direction1.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/direction/direction1.jpg" alt="employee dialog">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./media/image/direction/direction2.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/direction/direction2.jpg" alt="worker">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./media/image/direction/direction3.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/direction/direction3.jpg" alt="discussion work">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./media/image/direction/direction4.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/direction/direction4.jpg" alt="employees laugh">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./media/image/direction/direction5.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/direction/direction5.jpg" alt="assigning tasks to employees">
+                            </picture>
+                        </div>
+                    </div>                    
+                </div> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>  
+            </div>                      
+        </div>
+    </section>
     
+    <section class="wr-clients">
+        <div class="container-custom">
+            <h2>Отзывы наших партнеров</h2>
+
+            <section class="wr-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">директор</p>
+                                <h3>С.В. Косачев</h3>
+                                <p class="clients__worker__feedback">Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                        
+                            </div>
+                        </div>
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">глава представительства</p>
+                                <h3>Валерий Мяснянкин</h3>
+                                <p class="clients__worker__feedback">Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                        
+                            </div>
+                        </div>
+                        </div>
+                        <div class="slide">
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">директор</p>
+                                <h3>С.В. Косачев</h3>
+                                <p class="clients__worker__feedback">Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                        
+                            </div>
+                        </div>
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">глава представительства</p>
+                                <h3>Валерий Мяснянкин</h3>
+                                <p class="clients__worker__feedback">Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                       
+                            </div>
+                        </div>
+                         </div>
+                        <div class="slide">
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">директор</p>
+                                <h3>С.В. Косачев</h3>
+                                <p class="clients__worker__feedback">Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                        
+                            </div>
+                        </div>
+                        <div class="slide__card">
+                            <picture>
+                                <source srcset="./media/image/about.webp" 
+                                type="image/webp">           
+            
+                                <img src="./media/image/about.png" alt="gray image of the company">
+                            </picture>
+                            <div class="clients__feedback">
+                                <p class="clients__worker">глава представительства</p>
+                                <h3>Валерий Мяснянкин</h3>
+                                <p class="clients__worker__feedback">Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...</p>
+                                <a class="clients__worker__more" href="#">Читать далее</a>                        
+                            </div>
+                        </div>
+                        </div>                    
+                    </div>                     
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>         
+                <a class="more__info" href="#">Все отзывы</a>
+            </section>
+
+            <section class="parthners">
+                <div class="parthners__discription">
+                    <div class="parthners__content">
+                        <p>Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.</p>
+                    </div>
+                        <a href="#">Наши партнеры</a>
+                </div>
+                <div class="parthners__logo">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./media/image/clients/bayrent.webp" 
+                                    type="image/webp">         
+                
+                                    <img src="./media/image/clients/bayrent.png" alt="logo company">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./media/image/clients/titan.webp" 
+                                    type="image/webp">         
+                
+                                    <img src="./media/image/clients/titan.png" alt="logo company">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./media/image/clients/favorit.webp" 
+                                    type="image/webp">         
+                
+                                    <img src="./media/image/clients/favorit.png" alt="logo company">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./media/image/clients/alfabank.webp" 
+                                    type="image/webp">         
+                
+                                    <img src="./media/image/clients/alfabank.png" alt="logo company">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./media/image/clients/ibaInstitute.webp" 
+                                    type="image/webp">         
+                
+                                    <img src="./media/image/clients/ibaInstitute.png" alt="logo company">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="wr-offers">
+        <div class="container-custom">
+            <div class="offer offer1">
+                <h4>Просто объясним сложные вещи</h4>
+                <p>В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
+            </div>
+            <div class="offer offer2">
+                <h4>Надежно защитим права и интересы</h4>
+                <p>Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и не беспокоиться о нахождении работника на рабочем месте в нужный момент.</p>
+            </div>
+            <div class="offer offer3">
+                <div class="offer__header">
+                    <h4>Вы платите только 
+                    за результат!</h4>
+                </div>
+                <div class="offer__discription">
+                    <p>В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-bg">
+            <picture>
+                <source srcset="./media/image/bg.webp" 
+            type="image/webp">         
+
+                <img src="./media/image/bg.png" alt="pen on the notebook">
+        </picture>
+        </div>
+    </section>
+
+    <section class="wr-services">
+        <div class="container-custom">
+            <h2>Перечень оказываемых услуг</h2>
+            <div class="services__box">
+                <div class="services__card1 services__content">
+                    
+                    <h4>Регистрации ИП и юрлиц</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card2 services__content">
+                   
+                    <h4>Ликвидация, реорганизация и продажа бизнеса</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card3 services__content">
+                    
+                    <h4>Взыскание дебиторской задолженности</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card4 services__content">
+                    
+                    <h4>Письменные и устные консультации</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card5 services__content">
+                   
+                    <h4>Разработка уставных документов и внесение изменений в них</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card6 services__content">
+                    
+                    <h4>Ведение переговоров</h4>
+                    <a href="#"></a>
+                </div>
+                <div class="services__card7 services__content">
+                   
+                    <h4>Комплексное сопровождение бизнеса</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card8 services__content">
+                   
+                    <h4>Сопровождение деловых сделок</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card9 services__content">
+                    <h4>Лицензирование бизнеса</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="services__card10 services__content">
+                    <h4>Решение правовых споров</h4>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="services__description">
+                <div class="services__description__content">
+                    <p>Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.</p>
+                </div>
+                <a class="more__info" href="#">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="wr-dependences">
+        <div class="container-custom">
+            <div class="dependences__container">
+                <div class="dependences__discription">
+                    <h2>Почему нам доверяют</h2>
+                    <p>Прозрачность и открытость для клиентов – наш принцип, который с самого начала исключает любые недопонимания. Мы тщательно продумали работу каждого юриста внутри коллектива, что обеспечивает высокое качество юридических услуг компании.</p>
+                </div>
+                <div class="dependences__list">
+                    <ul>
+                        <li><span></span>безупречная репутация
+                        </li>
+                        <li><span></span>абсолютная конфиденциальность</li>
+                        <li><span></span>внимание к каждому клиенту</li>
+                        <li><span></span>успешный опыт решения нестандартных вопросов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dependences__container">
+                <div class="dependences__discription">
+                    <h2>Что получает клиент</h2>
+                    <p>Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</p>
+                </div>
+                <div class="dependences__list">
+                    <ul>
+                        <li><span></span>надежная защита бизнеса
+                        </li>
+                        <li><span></span>актуальная правовая помощь</li>
+                        <li><span></span>своевременная оценка рисков</li>
+                        <li><span></span>компетентное решение правовых вопросов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="wr-steps">
+        <section class="our__advantages">
+            <div class="container-custom">
+                <h2>Наши преимущества</h2>
+                <div class="our__advantages_box">
+                    <div class="our__advantages__card card1">
+                        <div class="our__advantages__icon">
+                            <svg class="icon-license">
+                                <use xlink:Href="./media/src/sprite.svg#icon-license"/>
+                            </svg>
+                        </div>
+                        <h3>Лицензия на оказание юридических услуг</h3>
+                    </div>
+                    <div class="our__advantages__card card2">
+                        <div class="our__advantages__icon">
+                            <svg class="icon-team">
+                                <use xlink:Href="./media/src/sprite.svg#icon-team"/>
+                            </svg>
+                        </div>
+                        <h3>Опытные сотрудники</h3>
+                    </div>
+                    <div class="our__advantages__card card3">
+                        <div class="our__advantages__icon">
+                            <svg class="icon-communication">
+                                <use xlink:Href="./media/src/sprite.svg#icon-communication"/>
+                            </svg>
+                        </div>
+                        <h3>Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы</h3>
+                    </div>
+                    <div class="our__advantages__card card4">
+                        <div class="our__advantages__icon">
+                            <svg class="icon-edit">
+                                <use xlink:Href="./media/src/sprite.svg#icon-edit"/>
+                            </svg>
+                        </div>
+                        <h3>Скрупулезный поход к ведению документации</h3>
+                    </div>
+                </div>
+                <div class="our__advantages__description">
+                    <p>Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cooperation">
+            <div class="container-custom">
+                <div class="cooperation__content">
+                    <h2>Организация сотрудничества</h2>  
+                    <div class="cooperation__description">            
+                        <span>1</span>
+                        <p>Установив контакт с нашим сотрудником, Вы оговорите нюансы предмета обсуждения и согласуете личную встречу.</p>
+                        <span>2</span>
+                        <p>Юрист изучит документы, необходимые для разработки стратегии решения возникшей ситуации. И заключит договор.</p>
+                    </div>
+                    <p class="cooperation__content__p">Также в нашей компании возможна удаленная форма обслуживания с оказанием полного комплекса юридических услуг в РБ через современные средства связи и мессенджеры.</p>
+                </div>
+                <div class="cooperation__form">
+                    <form class="main__form" action="#" method="POST">
+                        <div class="form__name">
+                            <h4>Ваше имя</h4>
+                            <input type="text" placeholder="Ваше имя" name="name" required>
+                            <span>Must not be empty</span>
+                        </div>
+                        <div class="form__phone">
+                            <h4>Телефон для связи</h4>
+                            <input type="phone" placeholder="+375 (XX) XXX-XX-XX" name="phone" required>
+                            <span>Invalid phone number</span>
+                        </div>
+                        <div class="form__privacy">
+                            <p>Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями </p>
+                            <a href="#">Политики конфиденциальности<span class="form__line"></span></a>
+                        </div>                        
+                        <button class="more__info" type="submit">Получить консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="cost">
+            <div class="container-custom">
+                <h2>Стоимость юридических услуг в Минске
+                </h2>
+                <p>Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.</p>
+                <a class="more__info" href="#">Тарифы</a>
+            </div>
+        </section>        
+    </section>
+
+    <footer>
+        <div class="container-custom">
+            <section class="wr-footer">
+                <div class="social">
+                    <p class="social__logo">ООО “МК-ПРАВОВЫЕ ТЕХНОЛОГИИ”</p>
+                    <div class="social__reiting">
+                        <div class="social__reiting__wr">
+                            <p>УНП</p>
+                            <span>192710862</span>
+                        </div>
+                        <div class="social__reiting__wr">
+                            <p>Наш рейтинг</p>
+                            <span>5 из 5 (15 отзывов)</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-vk">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-vk"/>
+                                </svg>        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-odnoklassniki">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-odnoklassniki"/>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-linkedin">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-linkedin"/>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-instagram">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-instagram"/>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-youtube">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-youtube"/>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-facebook">
+                                    <use xlink:Href="./media/image/sprite.svg#icon-facebook"/>
+                                </svg> 
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social__scheme">
+                        <a href="#">Карта сайта
+                            <svg class="icon-arrow">
+                                <use xlink:Href="./media/image/sprite.svg#icon-arrow"/>
+                            </svg> 
+                        </a>
+                        <a href="#">Политика конфиденциальности
+                            <svg class="icon-arrow">
+                                <use xlink:Href="./media/image/sprite.svg#icon-arrow"/>
+                            </svg> 
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__header">
+                    <h5>Наши офисы</h5>
+                </div>
+                <div class="contacts__group1">
+                    <h4>Контакты в Минске</h4>
+                    <ul>
+                        <li>
+                            <a href="tel:+375447550101">+375 (44) 755-01-01</a>
+                        </li>
+                        <li>
+                            <a href="tel:+375295500101">+375 (29) 550-01-01</a>
+                        </li>
+                        <li>
+                            <a href="tel:+375173744060">+375 (17) 374-40-60</a>
+                        </li>                     
+                    </ul>
+                    <div class="contacts__adress">
+                        <h6>Адрес</h6>
+                        <p class="adress">г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</p>
+                    </div>
+                    <div class="contacts__mail">
+                        <h6>Телефон для связи резидентов Российской Федерации
+                        </h6>
+                        <p>whatsapp <a href="tel:+79891662400">+7 (989) 166 24 00 </a></p>
+                        <a href="mailto:info@jurisprudent.by">info@jurisprudent.by</a>
+                    </div>
+                </div>
+                <div class="contacts__group2"></div>
+                <div class="contacts__group3"></div>
+                <div class="time"></div>
+            </section>
+        </div>
+        <div class="development">
+            <div class="container-custom">
+                <p>Разработка и продвижение сайта - Digital агентство «Веб Фокус»
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
